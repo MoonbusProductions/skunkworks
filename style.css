@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'BwGradualDEMO-Bold';
+    src: url('fonts/BwGradualDEMO-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BwGradualDEMO-Light';
+    src: url('fonts/BwGradualDEMO-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background: rgb(62, 62, 62);
+    margin-left: 20px;
+    font-family: 'BwGradualDEMO-Light', sans-serif;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'BwGradualDEMO-Bold', sans-serif;
+    text-transform: uppercase ;
+    line-height: 1.2;
+    color: #e98c00;
+    font-size: 6vw;
+    max-width: 85%;
+    min-width: fit-content;
+}
+
+h2 {
+    font-family: 'BwGradualDEMO-Bold', sans-serif;
+    font-size: 22px;
+
+}
+
+
+.container2 {
+    width: 95%;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #2e2e2e;
+    padding: 20px;
+}
+
+.text-container {
+    flex: 0 0 30%;
+    max-width: 60%;
+    margin-right: 2%;
+}
+
+.text-container2 {
+    flex: 0 1 30%;
+    max-width: 60%;
+    margin-right: 2%;
+}
+
+
+
+.nav-locatetext {
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: 0.5em;
+    position: sticky;
+    top: 60px;
+    background-color: rgb(62, 62, 62);
+    padding: 10px;
+    z-index: 999;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.locatetext {
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.5em;
+    margin-top: 17px;
+    margin-bottom: 6px;
+    color: #8b8b8b;
+}
+
+p {
+    font-size: 16px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 0%;
+}
+
+img {
+    width: 100%;
+    max-width: 200%;
+    height: auto;
+}
+
+.en-klass {
+    margin-top: 10px;
+}
+
+.linktext {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.linktext:hover {
+    color: #e98c00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+nav {
+    background-color: rgb(62, 62, 62);
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo-container img {
+    width: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e98c00;
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .text-container,
+    h1 {
+        max-width: 100%;
+    }
+
+    .container .text-container,
+    .container .image-container {
+        width: 100%;
+    }
+
+    .container .text-container .text-container2 {
+        max-width: none;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    margin-top: 60px;
+}
+
+
+.video-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+}
+
+.custom-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container-g {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    min-width: 400px;
+}
+
+.image-item:nth-child(1):hover img {
+    content: url("images/image1.jpg");
+}
+
+.image-item:nth-child(2):hover img {
+    content: url("images/image2.jpg");
+}
+
+.image-item:nth-child(3):hover img {
+    content: url("images/image3.jpg");
+}
+
+.image-item:nth-child(4):hover img {
+    content: url("images/image4.jpg");
+}
+
+.image-item:nth-child(5):hover img {
+    content: url("images/image5.jpg");
+}
+
+.image-item:nth-child(6):hover img {
+    content: url("images/image6.jpg");
+}
+
+
+
+
+
+.infotext {
+    font-size: 11px;
+    font-style: normal;
+    letter-spacing: 0.3em;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #8b8b8b;
+}
